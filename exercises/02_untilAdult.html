@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>untilAdult</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      let age;
+      do{
+        age = prompt("Introduce your age")
+
+        if(isNaN(age)){
+          alert("Introduce a valid age");
+        } else if (age<18){
+          alert("Introduce a number");
+        }
+      }while(age<18 || isNaN(age));
+
+      const container = document.getElementById("container");
+      container.innerHTML =
+        "<h1>Welcome to my awesome website for adult people</h1>";
+    </script>
+    
+  </body>
+</html>
