@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    setInterval(function () {
+      let now = new Date();
+
+      let endCurse = new Date(2025, 2, 20);
+
+      if (now >= endCurse) {
+        console.log("THe curse is over");
+      } else {
+        let rawDiff = endCurse - now;
+        let diff = rawDiff / (1000)
+        console.log(`Seconds remaining to the end of the course: ${Math.round(diff)}`);
+      }
+    }, 1000);
+  </script>
+</body>
+
+</html>
